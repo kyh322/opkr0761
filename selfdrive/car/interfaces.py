@@ -77,6 +77,26 @@ class CarInterfaceBase():
     ret.longitudinalTuning.kpV = [1.]
     ret.longitudinalTuning.kiBP = [0.]
     ret.longitudinalTuning.kiV = [1.]
+
+
+    ret.atomTuning.cvKPH    = [0.] 
+    ret.atomTuning.cvBPV    = [[150., 255.]]  # CV
+    ret.atomTuning.cvsMaxV  = [[255., 230.]]
+    ret.atomTuning.cvsdUpV  = [[3,3]]
+    ret.atomTuning.cvsdDnV  = [[7,5]]
+    
+    ret.atomTuning.sRKPH     = [30, 40, 80]   # Speed  kph
+    ret.atomTuning.sRBPV     = [[0.],      [0.],      [0.]     ]
+    ret.atomTuning.sRlqrkiV      = [[0.005],   [0.015],   [0.02]   ]
+    ret.atomTuning.sRlqrscaleV   = [[2000],    [1900.0],  [1850.0] ]
+    ret.atomTuning.sRpidKiV      = [[0.02,0.01,0.02],[0.03,0.02,0.03],[0.03,0.02,0.03]]
+    ret.atomTuning.sRpidKpV      = [[0.20,0.15,0.20],[0.25,0.20,0.25],[0.25,0.20,0.25]]
+    ret.atomTuning.sRsteerRatioV = [[13.95,13.85,13.95],[13.95,13.85,13.95],[13.95,13.85,13.95]]
+    ret.atomTuning.sRsteerActuatorDelayV = [[0.25,0.5,0.25],[0.25,0.8,0.25],[0.25,0.8,0.25]]
+  
+    ret.lateralsRatom.deadzone = 0.1
+    ret.lateralsRatom.steerOffset = 0
+    ret.lateralsRatom.cameraOffset = 0    
     return ret
 
   # returns a car.CarState, pass in car.CarControl
