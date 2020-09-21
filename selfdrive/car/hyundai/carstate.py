@@ -111,7 +111,7 @@ class CarState(CarStateBase):
     self.update_atom( cp, cp_cam )
 
     ret.cruiseState.available = self.main_on and self.cruiseState_modeSel != 3
-    ret.cruiseState.enabled =  ret.cruiseState.available and self.gearShifter == GearShifter.drive
+    ret.cruiseState.enabled =  ret.cruiseState.available #and self.gearShifter == GearShifter.drive
     ret.cruiseState.standstill = cp_scc.vl["SCC11"]['SCCInfoDisplay'] == 4.
 
     # most HKG cars has no long control, it is safer and easier to engage by main on
