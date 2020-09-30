@@ -36,7 +36,8 @@ class CAR:
   GRANDEUR_H_20 = "HYUNDAI GRANDEUR HYBRID 2020"
   IONIQ_EV = "HYUNDAI IONIQ ELECTRIC 2016"
   NIRO_HEV = "KIA NIRO HYBRID 2016 ~ 2018"     
-
+  SONATA_TURBO = "HYUNDAI SONATA 2018 Turbo"
+  
 class Buttons:
   NONE = 0
   RES_ACCEL = 1
@@ -147,7 +148,12 @@ FINGERPRINTS = {
   ],
   CAR.KONA_EV: [
     {127: 7, 304: 8, 320: 8, 339: 8, 352: 8, 356: 4, 544: 8, 549: 8, 593: 8, 688: 5, 832: 8, 881: 8, 882: 8, 897: 8, 902: 8, 903: 8, 905: 8, 909: 8, 916: 8, 1040: 8, 1042: 8, 1056: 8, 1057: 8, 1078: 4, 1136: 8, 1151: 6, 1168: 7, 1173: 8, 1183: 8, 1186: 2, 1191: 2, 1225: 8, 1265: 4, 1280: 1, 1287: 4, 1290: 8, 1291: 8, 1292: 8, 1294: 8, 1307: 8, 1312: 8, 1322: 8, 1342: 6, 1345: 8, 1348: 8, 1355: 8, 1363: 8, 1369: 8, 1378: 4, 1407: 8, 1419: 8, 1426: 8, 1427: 6, 1429: 8, 1430: 8, 1456: 4, 1470: 8, 1473: 8, 1507: 8, 1535: 8, 2000: 8, 2004: 8, 2008: 8, 2012: 8}
-  ],    
+  ],
+
+  CAR.SONATA_TURBO: [
+    {64: 8, 66: 8, 67: 8, 68: 8, 127: 8, 273: 8, 274: 8, 275: 8, 339: 8, 356: 4, 399: 8, 447: 8, 512: 6, 544: 8, 593: 8, 608: 8, 688: 5, 790: 8, 809: 8, 832: 8, 884: 8, 897: 8, 899: 8, 902: 8, 903: 6, 916: 8, 1040: 8, 1056: 8, 1057: 8, 1078: 4, 1151: 6, 1168: 7, 1170: 8, 1253: 8, 1254: 8, 1255: 8, 1265: 4, 1280: 1, 1282: 4, 1287: 4, 1290: 8, 1292: 8, 1294: 8, 1312: 8, 1314: 8, 1322: 8, 1331: 8, 1332: 8, 1333: 8, 1342: 6, 1345: 8, 1348: 8, 1349: 8, 1351: 8, 1353: 8, 1363: 8, 1365: 8, 1366: 8, 1367: 8, 1369: 8, 1371: 8, 1407: 8, 1414: 3, 1415: 8, 1419: 8, 1425: 2, 1427: 6, 1440: 8, 1456: 4, 1460: 8, 1470: 8, 1472: 8, 1486: 8, 1487: 8, 1491: 8, 1530: 8, 2015: 8, 2024: 8},
+    {64: 8, 66: 8, 67: 8, 68: 8, 127: 8, 273: 8, 274: 8, 275: 8, 339: 8, 356: 4, 399: 8, 447: 8, 512: 6, 544: 8, 593: 8, 608: 8, 688: 5, 790: 8, 809: 8, 832: 8, 884: 8, 897: 8, 899: 8, 902: 8, 903: 6, 916: 8, 1040: 8, 1056: 8, 1057: 8, 1078: 4, 1151: 6, 1168: 7, 1170: 8, 1253: 8, 1254: 8, 1255: 8, 1265: 4, 1280: 1, 1282: 4, 1287: 4, 1290: 8, 1292: 8, 1294: 8, 1312: 8, 1314: 8, 1322: 8, 1331: 8, 1332: 8, 1333: 8, 1342: 6, 1345: 8, 1348: 8, 1349: 8, 1351: 8, 1353: 8, 1363: 8, 1365: 8, 1366: 8, 1367: 8, 1369: 8, 1407: 8, 1414: 3, 1415: 8, 1419: 8, 1425: 2, 1427: 6, 1440: 8, 1456: 4, 1460: 8, 1470: 8, 1472: 8, 1486: 8, 1487: 8, 1491: 8, 1530: 8, 1905: 8, 1913: 8, 1990: 8, 1998: 8, 2006: 8, 2014: 8, 2016: 8, 2017: 8, 2024: 8, 2025: 8}
+  ],
 }
 
 
@@ -175,7 +181,7 @@ CHECKSUM = {
 FEATURES = {
   "use_cluster_gears": [CAR.ELANTRA, CAR.KONA, CAR.ELANTRA_GT_I30],     # Use Cluster for Gear Selection, rather than Transmission
   "use_tcu_gears": [CAR.KIA_OPTIMA, CAR.SONATA_2019],                                    # Use TCU Message for Gear Selection
-  "use_elect_gears": [CAR.KIA_OPTIMA_H, CAR.KONA_EV, CAR.GRANDEUR_H_19, CAR.GRANDEUR_H_20, CAR.IONIQ_EV,CAR.NIRO_HEV], # Use TCU Message for Gear Selection
+  "use_elect_gears": [CAR.KIA_OPTIMA_H, CAR.KONA_EV, CAR.GRANDEUR_H_19, CAR.GRANDEUR_H_20, CAR.IONIQ_EV, CAR.NIRO_HEV], # Use TCU Message for Gear Selection
 }
 
 EV_HYBRID = [CAR.KONA_EV,CAR.GRANDEUR_H_19, CAR.GRANDEUR_H_20, CAR.IONIQ_EV,CAR.NIRO_HEV]
@@ -200,7 +206,8 @@ DBC = {
   CAR.GRANDEUR_H_19: dbc_dict('hyundai_kia_generic', None),
   CAR.GRANDEUR_H_20: dbc_dict('hyundai_kia_generic', None),
   CAR.IONIQ_EV: dbc_dict('hyundai_kia_generic', None), 
-  CAR.NIRO_HEV: dbc_dict('hyundai_kia_generic', None),  
+  CAR.NIRO_HEV: dbc_dict('hyundai_kia_generic', None),
+  CAR.SONATA_TURBO: dbc_dict('hyundai_kia_generic', None),
 }
 
 STEER_THRESHOLD = 100
