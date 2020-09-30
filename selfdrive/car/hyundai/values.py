@@ -37,7 +37,7 @@ class CAR:
   IONIQ_EV = "HYUNDAI IONIQ ELECTRIC 2016"
   NIRO_HEV = "KIA NIRO HYBRID 2016 ~ 2018"     
   SONATA_TURBO = "HYUNDAI SONATA 2018 Turbo"
-  
+
 class Buttons:
   NONE = 0
   RES_ACCEL = 1
@@ -180,7 +180,7 @@ CHECKSUM = {
 
 FEATURES = {
   "use_cluster_gears": [CAR.ELANTRA, CAR.KONA, CAR.ELANTRA_GT_I30],     # Use Cluster for Gear Selection, rather than Transmission
-  "use_tcu_gears": [CAR.KIA_OPTIMA, CAR.SONATA_2019],                                    # Use TCU Message for Gear Selection
+  "use_tcu_gears": [CAR.KIA_OPTIMA, CAR.SONATA_2019, CAR.SONATA_TURBO],                                    # Use TCU Message for Gear Selection
   "use_elect_gears": [CAR.KIA_OPTIMA_H, CAR.KONA_EV, CAR.GRANDEUR_H_19, CAR.GRANDEUR_H_20, CAR.IONIQ_EV, CAR.NIRO_HEV], # Use TCU Message for Gear Selection
 }
 
