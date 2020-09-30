@@ -428,7 +428,7 @@ EVENTS = {
       "Car Detected in Blindspot",
       "Monitor Other Vehicles",
       AlertStatus.userPrompt, AlertSize.mid,
-      Priority.LOW, VisualAlert.steerRequired, AudibleAlert.chimePrompt, .0, .1, .1),
+      Priority.LOW, VisualAlert.steerRequired, AudibleAlert.chimePrompt, 1., 2., 3.),
   },  
 
   EventName.laneChange: {

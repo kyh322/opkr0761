@@ -65,8 +65,6 @@ class CarController():
     self.traceCC = trace1.Loger("CarController")
 
 
-    
-
 
   def limit_ctrl(self, value, limit, offset ):
     p_limit = offset + limit
@@ -131,7 +129,7 @@ class CarController():
       self.steerdUP.append( interp( cv_value, sCV, self.cv_sdUpV[nPos] ) )
       self.steerdDN.append( interp( cv_value, sCV, self.cv_sdDnV[nPos] ) )
       nPos += 1
-      if nPos > 10:
+      if nPos > 20:
         break
 
     MAX = interp( v_ego_kph, self.cv_KPH, self.steerMAX )
