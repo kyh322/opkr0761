@@ -102,7 +102,7 @@ def main(sm=None, pm=None):
 
 
   learner = ParamsLearner(CP, params['steerRatio'], params['stiffnessFactor'], math.radians(params['angleOffsetAverage']))
-  min_sr, max_sr = 0.5 * CP.steerRatio, 2.0 * CP.steerRatio
+  min_sr, max_sr = 0.3 * CP.steerRatio, 2.0 * CP.steerRatio
 
   i = 0
   while True:
